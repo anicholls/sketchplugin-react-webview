@@ -1,0 +1,40 @@
+html {
+  background-color: #f7f7f7;
+}
+
+body {
+  font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
+  color: #6a7480;
+  font-size: 16px;
+  overflow: hidden;
+  user-select: none;
+}
+input {
+  height: 32px;
+  line-height: 24px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-right: 16px;
+}
+button {
+  background: #0093dd;
+  border-radius: 32px;
+  border: 0;
+  color: #fff;
+  height: 32px;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+button:active {
+  background-color: #0282c2;
+}
+.container {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

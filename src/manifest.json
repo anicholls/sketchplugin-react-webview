@@ -1,0 +1,27 @@
+{
+  "compatibleVersion": 52,
+  "bundleVersion": 1,
+  "identifier": "sketch-react-plugin",
+  "commands": [
+    {
+      "name": "Example Command",
+      "identifier": "sketch-react-plugin.example-command",
+      "script": "./commandExample.js",
+      "description": "My Plugin command."
+    },
+    {
+      "name": "React Example Command",
+      "identifier": "sketch-react-plugin.react-example-command",
+      "script": "./commandReactExample.js",
+      "description": "My React Plugin command."
+    }
+  ],
+  "menu": {
+    "title": "Sketch-React-Plugin",
+    "items": [
+      "sketch-react-plugin.example-command",
+      "-",
+      "sketch-react-plugin.react-example-command"
+    ]
+  }
+}

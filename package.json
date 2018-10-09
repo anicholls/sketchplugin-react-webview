@@ -1,0 +1,56 @@
+{
+  "name": "sketchplugin-react-webview",
+  "description": "A template to build sketch components with React webviews",
+  "author": "Alex Nicholls",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/anicholls"
+  },
+  "engines": {
+    "sketch": ">=51.0"
+  },
+  "skpm": {
+    "name": "Sketch-React-Plugin",
+    "manifest": "src/manifest.json",
+    "main": "Sketch-React-Plugin.sketchplugin"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link",
+    "lint": "eslint '**/*.{js,jsx}' --quiet",
+    "format": "prettier --write '**/*.{js,jsx}'"
+  },
+  "devDependencies": {
+    "@skpm/babel-preset": "^0.1.1",
+    "@skpm/builder": "^0.5.9",
+    "@skpm/extract-loader": "^2.0.2",
+    "babel-plugin-react-html-attrs": "^2.1.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^7.5.1",
+    "html-loader": "^0.5.1",
+    "prettier": "^1.9.2"
+  },
+  "resources": [
+    "resources/**/*.js"
+  ],
+  "dependencies": {
+    "react": "^16.1.1",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.1.1",
+    "react-router-dom": "^4.2.2",
+    "sketch-module-user-preferences": "^1.0.2",
+    "sketch-module-web-view": "^1.2.3",
+    "skpm": "^1.1.1",
+    "titlecase": "^1.1.2"
+  }
+}
