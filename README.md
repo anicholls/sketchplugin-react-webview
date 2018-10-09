@@ -1,6 +1,3 @@
-sketchplugin-react-webview",
-"description": "A template to build sketch components with React webviews",
-
 # Sketch Plugin React Webview Template
 
 A template to build sketch components with React webviews.
